@@ -1,0 +1,774 @@
+/*
+	[Table of contents]
+
+	1. Body
+	2. Container / .container
+	3. Info / .info
+	4. Button / .btn
+	5. SVG Objects
+		5.1. Black Coffee / .blackCoffee
+		5.2. Parsley No.1 / .parsley-1
+		5.3. Parsley No.2 / .parsley-2
+		5.4. Lemon No.1 / .lemon-1
+		5.5. Lemon No.2 / .lemon-2
+		5.6. Parsley No.3 / .parsley-3
+		5.7. Kitchen Knife / .kitchenKnife
+		5.8. Yellow Pepper / .yellowPepper
+		5.9. Red Pepper / .redPepper
+		5.10. Fork / .fork
+		5.11. Dinner Knife / .dinnerKnife
+		5.12. Pot / .pot
+		5.13. Plate / .plate
+		5.14. Broth / .broth
+	6. Responsive
+		6.1. Max Width: 1366px / R1
+		6.2. Max Width: 1023px and Max Height: 839px / R2
+		6.3. Max Width: 479px and Max Height: 350px / R3
+		6.4. Max Width: 303px and Max Height: 200px / R4
+
+	------------------------------------------------------------*/
+
+/*	Main Styles
+	==================================================*/
+
+body {
+	/*
+	background-image: url('598062-food-strawberry-cake-wallpaper-1080p.jpg')  ;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+  
+	
+}
+
+.container {
+
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	
+	
+}
+
+/*	Error Message
+	==================================================*/
+
+.info {
+	color: #fff;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+
+}
+	.info h1{
+		font-family: 'Varela Round', sans-serif;
+		font-size: 136px;
+		padding: 0 226px 0 226px;
+		text-shadow: 0px 5px rgba(0,0,0,.05);
+	}
+	.info p{
+		font-family: 'Varela Round', sans-serif;
+		font-size: 36px;
+		text-shadow: 0px 5px rgba(0,0,0,.05);
+	}
+
+/*	Button
+	==================================================*/
+
+.btn {
+	font-family: 'Varela Round', sans-serif;
+	text-transform: uppercase;
+	padding: 25px 150px 25px 150px;
+	margin-top: 50px;
+	border: none;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-transition: all .2s;
+	-moz-transition: all .2s;
+	-o-transition: all .2s;
+	transition: all .2s;
+	box-shadow: 0px 5px 0px rgba(0,0,0,.05);
+}
+	.btn-info, .btn-info:focus {
+		background-color: #ffffff;
+		color: #5b4132;
+	}
+	.btn-info:hover {
+		padding: 25px 175px 25px 175px;
+		background: #e4c029; 
+		color: #fff;
+	}
+
+/*	SVG Objects
+	==================================================*/
+
+.blackCoffee {
+	background: url('../svg/blackCoffee.svg') no-repeat;
+	background-size: cover;
+	width: 238px;
+	height: 238px;
+	position: absolute;
+	right: 35%;
+	bottom: 70%;
+	margin-right: -300px;
+
+	-webkit-filter: drop-shadow(0px 15px 0px rgba(0,0,0,.05));
+	filter: drop-shadow(0px 15px 0px rgba(0,0,0,.05));
+}
+.parsley-1 {
+	background: url('../svg/parsley01.svg') no-repeat;
+	background-size: cover;
+	width: 40px;
+	height: 51px;
+	position: absolute;
+	right: 10%;
+	bottom: 50%;
+	margin-right: -135px;
+	margin-bottom: 20px;
+	-ms-transform: rotate(70deg); /* IE 9 */
+    -webkit-transform: rotate(70deg); /* Chrome, Safari, Opera */
+    transform: rotate(70deg);
+
+    -webkit-filter: drop-shadow(6px 2px 0px rgba(0,0,0,.05));
+	filter: drop-shadow(6px 2px 0px rgba(0,0,0,.05));
+}
+.parsley-2 {
+	background: url('../svg/parsley01.svg') no-repeat;
+	background-size: cover;
+	width: 40px;
+	height: 51px;
+	position: absolute;
+	right: 10%;
+	bottom: 50%;
+	margin-right: -125px;
+	-ms-transform: rotate(115deg); /* IE 9 */
+    -webkit-transform: rotate(115deg); /* Chrome, Safari, Opera */
+    transform: rotate(115deg);
+
+    -webkit-filter: drop-shadow(4px -5px 0px rgba(0,0,0,.05));
+	filter: drop-shadow(4px -5px 0px rgba(0,0,0,.05));
+}
+.lemon-1 {
+	background: url('../svg/lemon01.svg') no-repeat;
+	background-size: cover;
+	width: 100px;
+	height: 111px;
+	position: absolute;
+	right: 10%;
+	bottom: 50%;
+	margin-right: -115px;
+	-ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+
+    -webkit-filter: drop-shadow(0px -25px 0px rgba(0,0,0,.05));
+	filter: drop-shadow(0px -25px 0px rgba(0,0,0,.05));
+}
+.lemon-2 {
+	background: url('../svg/lemon02.svg') no-repeat;
+	background-size: cover;
+	width: 110px;
+	height: 110px;
+	position: absolute;
+	right: 10%;
+	bottom: 50%;
+	margin-right: -115px;
+	margin-bottom: -130px;
+
+	-webkit-filter: drop-shadow(0px 25px 0px rgba(0,0,0,.05));
+	filter: drop-shadow(0px 25px 0px rgba(0,0,0,.05));
+}
+.parsley-3 {
+	background: url('../svg/parsley02.svg') no-repeat;
+	background-size: cover;
+	width: 75px;
+	height: 51px;
+	position: absolute;
+	right: 6%;
+	bottom: 2%;
+	margin-right: 60px;
+	margin-bottom: 65px;
+	-ms-transform: rotate(-25deg); /* IE 9 */
+    -webkit-transform: rotate(-25deg); /* Chrome, Safari, Opera */
+    transform: rotate(-25deg);
+
+    -webkit-filter: drop-shadow(-3px 4px 0px rgba(0,0,0,.05));
+	filter: drop-shadow(-3px 4px 0px rgba(0,0,0,.05));
+}
+.kitchenKnife {
+	background: url('../svg/kitchenKnife.svg') no-repeat;
+	background-size: cover;
+	width: 446px;
+	height: 290px;
+	position: absolute;
+	right: 6%;
+	bottom: 0%;
+	margin-left: 0px;
+
+	-webkit-filter: drop-shadow(0px 15px 0px rgba(0,0,0,.05));
+	filter: drop-shadow(0px 15px 0px rgba(0,0,0,.05));
+}
+.yellowPepper{
+	background: url('../svg/yellowPepper.svg') no-repeat;
+	background-size: cover;
+	width: 220px;
+	height: 195px;
+	position: absolute;
+	right: 26%;
+	bottom: 0%;
+	margin-right: 0px;
+
+	-webkit-filter: drop-shadow(0px 30px 0px rgba(0,0,0,.05));
+	filter: drop-shadow(0px 30px 0px rgba(0,0,0,.05));
+}
+.redPepper{
+	background: url('../svg/redPepper.svg') no-repeat;
+	background-size: cover;
+	width: 195px;
+	height: 160px;
+	position: absolute;
+	left: 20%;
+	bottom: 0%;
+	margin-right: 0px;
+
+	-webkit-filter: drop-shadow(0px 30px 0px rgba(0,0,0,.05));
+	filter: drop-shadow(0px 30px 0px rgba(0,0,0,.05));
+}
+.fork{
+	background: url('../svg/fork.svg') no-repeat;
+	background-size: cover;
+	width: 85px;
+	height: 175px;
+	position: absolute;
+	right: 85%;
+	bottom: 0%;
+	margin-right: 0px;
+
+	-webkit-filter: drop-shadow(0px 10px 0px rgba(0,0,0,.05));
+	filter: drop-shadow(0px 10px 0px rgba(0,0,0,.05));
+}
+.dinnerKnife{
+	background: url('../svg/dinnerKnife.svg') no-repeat;
+	background-size: cover;
+	width: 180px;
+	height: 140px;
+	position: absolute;
+	right: 85%;
+	bottom: 0%;
+	margin-right: 0px;
+
+	-webkit-filter: drop-shadow(0px 10px 0px rgba(0,0,0,.05));
+	filter: drop-shadow(0px 10px 0px rgba(0,0,0,.05));
+}
+.pot{
+	background: url('../svg/pot.svg') no-repeat;
+	background-size: cover;
+	width: 635px;
+	height: 500px;
+	position: absolute;
+	right: 77%;
+	bottom: 50%;
+	margin-right: 85px;
+	margin-bottom: -85px;
+	-ms-transform: rotate(-30deg); /* IE 9 */
+    -webkit-transform: rotate(-30deg); /* Chrome, Safari, Opera */
+    transform: rotate(-30deg);
+
+    -webkit-filter: drop-shadow(-40px 60px 0px rgba(0,0,0,.05));
+	filter: drop-shadow(-40px 60px 0px rgba(0,0,0,.05));
+}
+.plate{
+	background: url('../svg/plate.svg') no-repeat;
+	background-size: cover;
+	width: 340px;
+	height: 340px;
+	position: absolute;
+	right: 55%;
+	bottom: 81%;
+	margin-right: 0px;
+
+	-webkit-filter: drop-shadow(0px 20px 0px rgba(0,0,0,.05));
+	filter: drop-shadow(0px 20px 0px rgba(0,0,0,.05));
+}
+.broth{
+	background: url('../svg/broth.svg') no-repeat;
+	background-size: cover;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	right: 55%;
+	bottom: 81%;
+	margin-right: 18px;
+	margin-bottom: 14px;
+}
+
+/*	Responsive
+	==================================================*/
+
+/*	R1	*/
+@media (max-width: 1366px) {
+	.btn {
+		padding: 25px 115px 25px 115px;
+	}
+	.btn-info:hover, .btn-info:focus {
+		padding: 25px 140px 25px 140px;
+	}
+	.info h1{
+		font-size: 105px;
+	}
+	.info p{
+		font-size: 26px;
+		text-shadow: 0px 4px rgba(0,0,0,.05);
+	}
+	.blackCoffee {
+		width: 178.5px;
+		height: 178.5px;
+
+		-webkit-filter: drop-shadow(0px 11.25px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(0px 11.25px 0px rgba(0,0,0,.05));
+	}
+	.parsley-1 {
+		width: 30px;
+		height: 38.25px;
+		margin-right: -75px;
+
+		-webkit-filter: drop-shadow(4.5px 1.5px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(4.5px 1.5px 0px rgba(0,0,0,.05));
+	}
+	.parsley-2 {
+		width: 30px;
+		height: 38.25px;
+		margin-right: -65px;
+
+		-webkit-filter: drop-shadow(3px -3.75px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(3px -3.75px 0px rgba(0,0,0,.05));
+	}
+	.lemon-1 {
+		width: 75px;
+		height: 83.25px;
+		margin-right: -60px;
+
+		-webkit-filter: drop-shadow(0px -18.75px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(0px -18.75px 0px rgba(0,0,0,.05));
+	}
+	.lemon-2 {
+		width: 82.5px;
+		height: 82.5px;
+		margin-right: -60px;
+		margin-bottom: -92px;
+
+		-webkit-filter: drop-shadow(0px 18.75px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(0px 18.75px 0px rgba(0,0,0,.05));
+	}
+	.parsley-3 {
+		width: 56.25px;
+		height: 38.25px;
+		right: 2%;
+		margin-bottom: 25px;
+
+		-webkit-filter: drop-shadow(-2.25px 3px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(-2.25px 3px 0px rgba(0,0,0,.05));
+	}
+	.kitchenKnife {
+		width: 334.5px;
+		height: 217.5px;
+		right: 2%;
+
+		-webkit-filter: drop-shadow(0px 8.4px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(0px 8.4px 0px rgba(0,0,0,.05));
+	}
+	.yellowPepper {
+		width: 165px;
+		height: 146.25px;
+
+		-webkit-filter: drop-shadow(0px 22.5px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(0px 22.5px 0px rgba(0,0,0,.05));
+	}
+	.redPepper {
+		width: 146.25px;
+		height: 120px;
+
+		-webkit-filter: drop-shadow(0px 22.5px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(0px 22.5px 0px rgba(0,0,0,.05));
+	}
+	.fork {
+		width: 63.75px;
+		height: 131.25px;
+
+		-webkit-filter: drop-shadow(0px 7.5px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(0px 7.5px 0px rgba(0,0,0,.05));
+	}
+	.dinnerKnife {
+		width: 135px;
+		height: 105px;
+
+		-webkit-filter: drop-shadow(0px 7.50px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(0px 7.5px 0px rgba(0,0,0,.05));
+	}
+	.pot {
+		width: 476.25px;
+		height: 375px;
+
+		-webkit-filter: drop-shadow(-30px 45px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(-30px 45px 0px rgba(0,0,0,.05));
+	}
+	.plate {
+		width: 247.5px;
+		height: 247.5px;
+
+		-webkit-filter: drop-shadow(0px 15px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(0px 15px 0px rgba(0,0,0,.05));
+	}
+	.broth {
+		width: 217.5px;
+		height: 217.5px;
+		margin: 0 15px 11px 0;
+	}
+}
+
+/*	R2	*/
+@media (max-width: 1023px), (max-height: 839px) {
+	.btn {
+		padding: 20px 75px 20px 75px;
+		margin-top: 25px;
+		font-size: 14px;
+	}
+	.btn-info:hover, .btn-info:focus {
+		padding: 20px 100px 20px 100px;
+	}
+	.info h1{
+		font-size: 105px;
+		padding: 0 50px 0 50px;
+		margin-bottom: 0px;
+	}
+	.info p{
+		font-size: 22px;
+		text-shadow: 0px 3px rgba(0,0,0,.05);
+	}
+	.blackCoffee {
+		width: 119px;
+		height: 119px;
+		right: 35%;
+		bottom: 80%;
+		margin-right: -95px;
+
+		-webkit-filter: drop-shadow(0px 7.5px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(0px 7.5px 0px rgba(0,0,0,.05));
+	}
+	.parsley-1 {
+		width: 20px;
+		height: 25.5px;
+		margin: 0 -60px 15px 0;
+		right: 15%;
+
+		-webkit-filter: drop-shadow(3px 1px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(3px 1px 0px rgba(0,0,0,.05));
+	}
+	.parsley-2 {
+		width: 20px;
+		height: 25.5px;
+		margin: 0 -55px 0px 0;
+		right: 15%;
+
+		-webkit-filter: drop-shadow(2px -2.5px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(2px -2.5px 0px rgba(0,0,0,.05));
+	}
+	.lemon-1 {
+		width: 50px;
+		height: 55.5px;
+		margin-right: -49px;
+		right: 15%;
+
+		-webkit-filter: drop-shadow(0px -12.5px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(0px -12.5px 0px rgba(0,0,0,.05));
+	}
+	.lemon-2 {
+		width: 55px;
+		height: 55px;
+		margin-right: -45px;
+		margin-bottom: -60px;
+		right: 15%;
+
+		-webkit-filter: drop-shadow(0px 12.5px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(0px 12.5px 0px rgba(0,0,0,.05));
+	}
+	.parsley-3 {
+		width: 37.5px;
+		height: 25.5px;
+		right: 20%;
+		margin-right: -70px;
+		margin-bottom: 15px;
+
+		-webkit-filter: drop-shadow(-1.5px 2px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(-1.5px 2px 0px rgba(0,0,0,.05));
+	}
+	.kitchenKnife {
+		width: 223px;
+		height: 145px;
+		margin-right: -96px;
+		right: 20%;
+
+		-webkit-filter: drop-shadow(0px 7.5px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(0px 7.5px 0px rgba(0,0,0,.05));
+	}
+	.yellowPepper {
+		width: 110px;
+		height: 97.5px;
+		margin-right: -31px;
+		right: 35%;
+
+		-webkit-filter: drop-shadow(0px 15px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(0px 15px 0px rgba(0,0,0,.05));
+	}
+	.redPepper {
+		width: 97.5px;
+		height: 80px;
+		margin-left: -35px;
+		left: 35%;
+
+		-webkit-filter: drop-shadow(0px 15px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(0px 15px 0px rgba(0,0,0,.05));
+	}
+	.fork {
+		width: 42.5px;
+		height: 87.5px;
+		margin-right: -25px;
+		right: 80%;
+
+		-webkit-filter: drop-shadow(0px 5px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(0px 5px 0px rgba(0,0,0,.05));
+	}
+	.dinnerKnife {
+		width: 90px;
+		height: 70px;
+		margin-right: -25px;
+		right: 80%;
+
+		-webkit-filter: drop-shadow(0px 5px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(0px 5px 0px rgba(0,0,0,.05));
+	}
+	.pot {
+		width: 317.5px;
+		height: 250px;
+		margin-right: -45px;
+		right: 85%;
+
+		-webkit-filter: drop-shadow(-20px 30px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(-20px 30px 0px rgba(0,0,0,.05));
+	}
+	.plate {
+		width: 165px;
+		height: 165px;
+
+		-webkit-filter: drop-shadow(0px 10px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(0px 10px 0px rgba(0,0,0,.05));
+	}
+	.broth {
+		width: 145px;
+		height: 145px;
+		margin: 0 9px 7px 0;
+	}
+}
+
+/*	R3	*/
+@media (max-width: 479px), (max-height: 350px) {
+	.btn {
+		padding: 15px 30px 15px 30px;
+		margin-top: 0px;
+		font-size: 12px;
+	}
+	.btn-info:hover, .btn-info:focus {
+		padding: 15px 55px 15px 55px;
+	}
+	.info{
+		top: 45%;
+	}
+	.info h1{
+		font-size: 47px;
+		padding: 0 50px 0 50px;
+		margin-bottom: 0px;
+	}
+	.info p{
+		font-size: 14px;
+		text-shadow: 0px 3px rgba(0,0,0,.05);
+	}
+	.blackCoffee {
+		width: 59.5px;
+		height: 59.5px;
+		right: 35%;
+		bottom: 80%;
+		margin-right: -95px;
+
+		-webkit-filter: drop-shadow(0px 3.75px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(0px 3.75px 0px rgba(0,0,0,.05));
+	}
+	.parsley-1 {
+		width: 10px;
+		height: 12.75px;
+		margin: 0 -55px 20px 0;
+		right: 20%;
+
+		-webkit-filter: drop-shadow(1.5px 0.5px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(1.5px 0.5px 0px rgba(0,0,0,.05));
+	}
+	.parsley-2 {
+		width: 10px;
+		height: 12.75px;
+		margin: 0 -52px 13px 0;
+		right: 20%;
+
+		-webkit-filter: drop-shadow(1px -1.25px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(1px -1.25px 0px rgba(0,0,0,.05));
+	}
+	.lemon-1 {
+		width: 25px;
+		height: 27.75px;
+		margin-right: -49px;
+		margin-bottom: 15px;
+		right: 20%;
+
+		-webkit-filter: drop-shadow(0px -6.25px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(0px -6.25px 0px rgba(0,0,0,.05));
+	}
+	.lemon-2 {
+		width: 27.5px;
+		height: 27.5px;
+		margin-right: -45px;
+		margin-bottom: -20px;
+		right: 20%;
+
+		-webkit-filter: drop-shadow(0px 6.25px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(0px 6.25px 0px rgba(0,0,0,.05));
+	}
+	.parsley-3 {
+		width: 18.75px;
+		height: 12.75px;
+		right: 20%;
+		margin-right: -55px;
+		margin-bottom: 15px;
+
+		-webkit-filter: drop-shadow(-0.75px 1px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(-0.75px 1px 0px rgba(0,0,0,.05));
+	}
+	.kitchenKnife {
+		width: 111.5px;
+		height: 72.5px;
+		margin-right: -61px;
+
+		-webkit-filter: drop-shadow(0px 3.75px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(0px 3.75px 0px rgba(0,0,0,.05));
+	}
+	.yellowPepper {
+		width: 55px;
+		height: 48.75px;
+		margin-right: -35px;
+		right: 35%;
+
+		-webkit-filter: drop-shadow(0px 7.5px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(0px 7.5px 0px rgba(0,0,0,.05));
+	}
+	.redPepper {
+		width: 48.75px;
+		height: 40px;
+		margin-left: -35px;
+		left: 35%;
+
+		-webkit-filter: drop-shadow(0px 7.5px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(0px 7.5px 0px rgba(0,0,0,.05));
+	}
+	.fork {
+		width: 21.25px;
+		height: 43.75px;
+		margin-right: 0px;
+		right: 80%;
+
+		-webkit-filter: drop-shadow(0px 2.5px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(0px 2.5px 0px rgba(0,0,0,.05));
+	}
+	.dinnerKnife {
+		width: 45px;
+		height: 35px;
+		margin-right: 0px;
+		right: 80%;
+
+		-webkit-filter: drop-shadow(0px 2.5px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(0px 2.5px 0px rgba(0,0,0,.05));
+	}
+	.pot {
+		width: 158.75px;
+		height: 125px;
+		margin-right: -20px;
+		margin-bottom: -35px;
+		right: 85%;
+		bottom: 50%;
+
+		-webkit-filter: drop-shadow(-10px 15px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(-10px 15px 0px rgba(0,0,0,.05));
+	}
+	.plate {
+		width: 82.5px;
+		height: 82.5px;
+
+		-webkit-filter: drop-shadow(0px 5px 0px rgba(0,0,0,.05));
+		filter: drop-shadow(0px 5px 0px rgba(0,0,0,.05));
+	}
+	.broth {
+		width: 72.5px;
+		height: 72.5px;
+		margin: 0 5px 3px 0;
+	}
+}
+
+/*	R4	*/
+@media (max-width: 303px), (max-height: 200px) {
+	.blackCoffee {
+		visibility: hidden;
+	}
+	.parsley-1 {
+		visibility: hidden;
+	}
+	.parsley-2 {
+		visibility: hidden;
+	}
+	.lemon-1 {
+		visibility: hidden;
+	}
+	.lemon-2 {
+		visibility: hidden;
+	}
+	.parsley-3 {
+		visibility: hidden;
+	}
+	.kitchenKnife {
+		visibility: hidden;
+	}
+	.yellowPepper {
+		visibility: hidden;
+	}
+	.redPepper {
+		visibility: hidden;
+	}
+	.fork {
+		visibility: hidden;
+	}
+	.dinnerKnife {
+		visibility: hidden;
+	}
+	.pot {
+		visibility: hidden;
+	}
+	.plate {
+		visibility: hidden;
+	}
+	.broth {
+		visibility: hidden;
+	}
+}

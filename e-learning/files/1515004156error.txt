@@ -1,0 +1,4 @@
+  File "files/1515004156main.py", line 2
+    int main()
+           ^
+SyntaxError: invalid syntax

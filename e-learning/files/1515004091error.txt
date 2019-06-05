@@ -1,0 +1,3 @@
+files/1515004091main.c:1:11: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ at end of input
+           cbajhca
+           ^
